@@ -13,4 +13,32 @@
         android:id="@+id/ytPlayer"
         app:layout_constraintTop_toTopOf="parent"/>
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ytPlayer"
+        app:layout_constraintVertical_bias="0.85">
+
+
+        <TextView
+            android:labelFor="@id/et_pesquisa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_pesquisa_video"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="486dp" />
+
+        <EditText
+            android:inputType="text"
+            android:id="@+id/et_pesquisa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Nome de um vídeo" />
+
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
